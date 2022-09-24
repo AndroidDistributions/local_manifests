@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="twelve"
+          review="gerrit.pixelexperience.org" />
+
+  	<remote name="pixel-gitlab"
+          fetch="https://gitlab.com/PixelExperience/twelve"
+          revision="twelve" />
+
+  	<remote name="pixel-gitlab-self-hosted"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="twelve" />
+
+  	<remote name="pixel-devices"
+          fetch="https://github.com/PixelExperience-Devices"
+          revision="twelve" />
+
+  	<remote name="pixel-devices-blobs"
+          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
+	  revision="twelve" />
+
+	<remote name="AndroidDistributions"
+          fetch="https://github.com/androiddistributions"
+	  revision="lineage-19.1" />
+
+  <!-- begonia -->
+  <project path="device/xiaomi/begonia" name="device_xiaomi_begonia" remote="androiddistributions" />
+  <project path="kernel/xiaomi/begonia" name="kernel_xiaomi_begonia" remote="pixel-devices" />
+  <project path="device/mediatek/common" name="device_mediatek_common" remote="pixel" />
+  <project path="vendor/xiaomi/begonia" name="vendor_xiaomi_begonia" remote="pixel-devices-blobs" />
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="pixel" />
+  <project path="vendor/mediatek/opensource" name="vendor_mediatek-opensource" remote="pixel" />
+  <project path="vendor/mediatek/ims" name="vendor_mediatek_ims" remote="pixel" />
+  <project path="vendor/mediatek/interfaces" name="vendor_mediatek_interfaces" remote="pixel" />
+</manifest>
