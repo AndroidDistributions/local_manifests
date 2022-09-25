@@ -22,11 +22,11 @@
 	  revision="twelve" />
 
 	<remote name="AndroidDistributions"
-          fetch="https://github.com/androiddistributions"
+          fetch="https://github.com/AndroidDistributions"
 	  revision="lineage-19.1" />
 
   <!-- begonia -->
-  <project path="device/xiaomi/begonia" name="device_xiaomi_begonia" remote="androiddistributions" />
+  <project path="device/xiaomi/begonia" name="device_xiaomi_begonia" remote="AndroidDistributions" />
   <project path="kernel/xiaomi/begonia" name="kernel_xiaomi_begonia" remote="pixel-devices" />
   <project path="device/mediatek/common" name="device_mediatek_common" remote="pixel" />
   <project path="vendor/xiaomi/begonia" name="vendor_xiaomi_begonia" remote="pixel-devices-blobs" />
